@@ -1,45 +1,660 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>Jesse Patricio</title>
-	<!-- link to main stylesheet -->
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-		type="text/css">
+
+    <!-- important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Jesse Patricio - FullStack Developer</title>
+
+    <!-- Basic SEO -->
+    <meta name="description" content="Creative website development with html5, css3, jQuery & bootstrap framework">
+    <meta name="keywords" content="HTML5, CSS3, JQuery, Bootstrap, Web Design, Web Development, Responsive website, Creative website, Personal Website, Back-end, Front-end, API, Integration, Migration, Data Creation, Data Analysis">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
+
+    <!-- Responsive Tabs CSS -->
+    <link rel="stylesheet" href="css/responsive-tabs/responsive-tabs.min.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate/animate.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
 
 </head>
 
-<body>
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/public/Josefino Patricio - Software Developer CV.pdf">CV</a></li>
-			<li><a href="/blog">Blog</a></li>
-		</ul>
-	</nav>
-	<div class="container">
-		<div class="blurb">
-			<h1>Jesse Patricio</h1>
-			<p>FullStack Developer with over 10 years of experience creating various tools and applications for
-				Big and StartUp Companies. <a href="/about">Read more about my life...</a></p>
-		</div><!-- /.blurb -->
-	</div><!-- /.container -->
-	<footer>
-		<ul>
-			<li>
-				<a href="mailto:jessepatricio@gmail.com">
-					<i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
-				</a>
-			</li>
-			<li>
-				<a href="https://github.com/jessepatricio" target="_blank">
-					<i class="fa fa-github fa-3x" aria-hidden="true"></i>
-				</a>
-			</li>
-		</ul>
-	</footer>
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="site-nav-wrapper">
+
+                    <div class="navbar-header">
+
+                        <!-- Mobile Menu Open Button -->
+                        <span id="mobile-nav-open-btn">&#9776;</span>
+
+                        <!-- Logo -->
+                        <a class="navbar-brand smooth-scroll" href="#home">
+
+                            <div id="company-logo" class="company-white-logo">Jesse<span class="logo-half"> Patricio</span></div>
+
+                            <br>
+
+                        </a>
+                    </div>
+
+                    <!-- Main Menu -->
+                    <div class="container">
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav pull-right">
+                                <li><a class="smooth-scroll" href="#home">Home</a></li>
+                                <li><a class="smooth-scroll" href="#about">About</a></li>
+                                <li><a class="smooth-scroll" href="#portfolio">Work</a></li>
+                                <li><a class="smooth-scroll" href="#blog">Blog</a></li>
+                                <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu -->
+                    <div id="mobile-nav">
+                        <!-- Mobile Menu Close Button -->
+                        <span id="mobile-nav-close-btn">&times;</span>
+
+                        <div id="mobile-nav-content">
+                            <ul class="nav">
+                                <li><a class="smooth-scroll" href="#home">Home</a></li>
+                                <li><a class="smooth-scroll" href="#about">About</a></li>
+                                <li><a class="smooth-scroll" href="#team">Team</a></li>
+                                <li><a class="smooth-scroll" href="#services">Services</a></li>
+                                <li><a class="smooth-scroll" href="#portfolio">Work</a></li>
+                                <li><a class="smooth-scroll" href="#blog">Blog</a></li>
+                                <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Home -->
+    <section id="home">
+
+        <!-- Background Video -->
+        <video id="home-bg-video" poster="video/coding.png" autoplay loop muted>
+            <source src="video/coding.mov" type="video/mp4">
+        </video>
+
+        <!-- Overlay -->
+        <div id="home-overlay"></div>
+
+        <!-- Home Content -->
+        <div id="home-content">
+
+            <div id="home-content-inner" class="text-center">
+                
+                <div id="img_profile"></div>
+                    
+                <div id="home-heading">
+                    <h1 id="home-heading-1">Jesse Patricio</h1><br>
+                    <h1 id="home-heading-2"><span>Software Developer</span></h1>
+                </div>
+
+                <div id="home-text">
+                    <p>Web Development, Database Designa, Integrations, API's, Web Services, Process Automation tools, Reporting, BI and other related shit...</p>
+                </div>
+
+                <div id="home-btn">
+                    <a class="btn btn-general btn-home smooth-scroll" href="#about" title="Start Now" role="button">Show more</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Arrow Down -->
+        <a href="#about" id="arrow-down" class="smooth-scroll">
+            <i class="fa fa-angle-down"></i>
+        </a>
+
+    </section>
+    <!-- Home Ends -->
+
+    <!-- About -->
+    <section id="about">
+
+        <!-- About 01 -->
+        <div id="about-01">
+
+            <div class="content-box-lg">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- About Left Side -->
+                        <div class="col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="1s">
+
+                            <div id="about-left">
+                                <div class="vertical-heading">
+                                    <h5>INFORMATION</h5>
+                                    <h2>A <strong>Story</strong><br>About Me</h2>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- About Right Side -->
+                        <div class="col-md-6 col-sm-6 wow slideInRight" data-wow-duration="1s">
+
+                            <div id="about-right">
+                                <p>My past position as a software developer provided me invaluable insights in the effective operation of developing and creating software solutions for a wider range of industries.  I am eager to take these competencies to a new direction in an interesting role that are full of challenges in a company that recognises talent, skills, and experiences.  Moreover, I am prepared to use my software development skills and experiences to further enhance and train in a new development platforms, frameworks and programming languages that would greatly contribute to the company’s missions and goals.</p>
+                                <p>My skills includes proficiency in development tools such as
+                                    <ul>
+                                        <li>
+                                            ASP.NET web framework, MVC design pattern, Razor syntax, C# language.
+                                        </li>
+                                        
+                                    
+<li>.Net Core Web API, swagger, PostMan.</li>
+<li>Docker and Microservices.</li>
+<li>Web services using SOAP and Web API RESTful application.</li>
+<li>Microsoft SQL Server and MySQL.</li>
+<li>Object relational mapper (ORM) Entity Framework using Code-First and Database-First approached.</li>
+<li>Using ETL integration tools such as Microsoft SSIS, Data Analysis Service, and Talend Data Integration/ ESB Tools. </li>
+<li>Mark-up and scripting languages such as HTML, XML, XSLT, XPATH, JSON, Javascript, Ajax, and jQuery.</li>
+<li>Front-end tools such as CSS, LESS, Responsive Design, and Bootstrap.</li>
+<li>Microsoft Office Applications and web content management systems such as SharePoint and Alfresco.</li>
+                                        <li>Salesforce.com CRM cloud-based customer relationship management system.</li></ul>
+                                <p>And competence in</p>
+    <ul>
+<li>Using Azure Platform as a Service (PaaS).</li>
+<li>AWS S3 cloud web service interface for data repository.</li>
+<li>Agile methodology and frameworks like Scrum and Kanban.</li>
+<li>Team Foundation Server and GIT repositories for managing source code.</li>
+        </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- About Bottom -->
+                    <div class="row">
+
+                        <div class="col-md-12 wow fadeInUp" data-wow-duration="2s">
+
+                            <div id="about-bottom">
+                                <img src="img/about/about_me.jpg" alt="About Me" class="img-responsive">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- About 01 Ends -->
+
+        <!-- About 02 -->
+        <div id="about-02">
+
+            <div class="content-box-md">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-4 wow fadeInLeft">
+                            <!-- About item 01 -->
+                            <div class="about-item text-center">
+                                <i class="fa fa-rocket"></i>
+                                <h3>Mission</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, eos asperiores
+                                    nobis molestias nam. Ex quos dicta as.</p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-duration="2s">
+                            <!-- About item 02 -->
+                            <div class="about-item text-center">
+                                <i class="fa fa-eye"></i>
+                                <h3>Vision</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, eos asperiores
+                                    nobis molestias nam. Ex quos dicta as.</p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-4  wow fadeInRight">
+                            <!-- About item 03 -->
+                            <div class="about-item text-center">
+                                <i class="fa fa-pencil"></i>
+                                <h3>Passion</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, eos asperiores
+                                    nobis molestias nam. Ex quos dicta as.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- About 02 Ends -->
+
+    </section>
+    <!-- About Ends -->
+
+     <!-- Statement -->
+    <section id="statement">
+
+        <div class="content-box-lg">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12 wow fadeIn">
+
+                        <div id="tech-statement" class="text-center">
+
+                            <h3><i class="fa fa-quote-left"></i> I design and develop services and process automation tools for companies business processes that help them achieved their goals in less amount of time. <i class="fa fa-quote-right"></i> </h3>
+                            <p>- Jesse Patricio -</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Statement Ends -->
+
+    <!-- Stats -->
+    <section id="stats">
+
+        <div class="content-box-md">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12 wow slideInLeft">
+
+                        <div class="vertical-heading">
+                            <h5>Fun Facts</h5>
+                            <h2>Provided<br><strong>Excellent</strong> Services</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row wow fadeInUp" data-wow-duration="2s">
+
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+
+                        <!-- Stats Item 01 -->
+                        <div class="stats-item text-center">
+                            <i class="fa fa-bar-chart"></i>
+                            <h3 class="counter">19</h3>
+                            <p>Years Experience</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+
+                        <!-- Stats Item 02 -->
+                        <div class="stats-item text-center">
+                            <i class="fa fa-codepen"></i>
+                            <h3 class="counter">69</h3>
+                            <p>Projects Done</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+
+                        <!-- Stats Item 03 -->
+                        <div class="stats-item text-center">
+                            <i class="fa fa-trophy"></i>
+                            <h3 class="counter">10</h3>
+                            <p>Awards Received</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+
+                        <!-- Stats Item 04 -->
+                        <div class="stats-item text-center">
+                            <i class="fa fa-users"></i>
+                            <h3 class="counter">40</h3>
+                            <p>Happy Clients</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Stats Ends -->
+
+    <!-- Technology Used -->
+    <section id="clients">
+
+        <div class="content-box-sm">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12 text-center">
+
+                        <div class="horizontal-heading">
+                            <h5>Technology Stacks</h5>
+                            <h2>Development <strong>Tools</strong></h2>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+
+                    <div class="col-md-12">
+
+                        <div id="clients-list" class="owl-carousel owl-theme">
+
+                            <!-- Client 01 -->
+                            <div class="client">
+                                <img src="img/tech_logo/html5.svg" class="img-responsive" alt="client">
+                            </div>
+                            <!-- Client 02 -->
+                            <div class="client">
+                                <img src="img/tech_logo/css3.svg" class="img-responsive" alt="client">
+                            </div>
+                            <!-- Client 03 -->
+                            <div class="client">
+                                <img src="img/tech_logo/vs_code.svg" class="img-responsive" alt="client">
+                            </div>
+                            <!-- Client 04 -->
+                            <div class="client">
+                                <img src="img/tech_logo/jquery.svg" class="img-responsive" alt="client">
+                            </div>
+                            <!-- Client 05 -->
+                            <div class="client">
+                                <img src="img/tech_logo/microsoft-sql-server.svg" class="img-responsive" alt="client">
+                            </div>
+                            <!-- Client 06 -->
+                            <div class="client">
+                                <img src="img/tech_logo/NET_Core_Logo.svg" class="img-responsive" alt="client">
+                            </div>
+                            <!-- Client 07 -->
+                            <div class="client">
+                                <img src="img/tech_logo/Node.js_logo.svg" class="img-responsive" alt="client">
+                            </div>
+                            <!-- Client 08 -->
+                            <div class="client">
+                                <img src="img/tech_logo/postman.svg" class="img-responsive" alt="client">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Clients Ends -->
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <div class="content-box-md">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <!-- Contact Left -->
+                        <div id="contact-left">
+
+                            <div class="vertical-heading">
+                                <h5>Contact Me</h5>
+                                <h2>Get<br>In <strong>Touch</strong></h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias modi est itaque aliquam
+                                sit, minima esse nihil mollitia no.</p>
+
+                            <div id="offices">
+
+                                <div class="row">
+
+                                    <div class="col-md-6">
+
+                                        <div class="office">
+                                            <h4>New Zealand</h4>
+                                            <ul class="office-details">
+                                                <li><i class="fa fa-mobile"></i><span>+(64) 021 111 0738</span></li>
+                                                <li><i class="fa fa-envelope"></i><span>jessepatricio@gmail.com</span></li>
+                                                <li><i class="fa fa-map-marker"></i><span>89 Forrest Hill Road, Milford<br>Auckland,
+                                                        New Zealand.</span></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+
+<!--
+                                        <div class="office">
+                                            <h4>Australia</h4>
+                                            <ul class="office-details">
+                                                <li><i class="fa fa-mobile"></i><span>+(88) 457 87 74 87</span></li>
+                                                <li><i class="fa fa-envelope"></i><span>help@mindworks.com</span></li>
+                                                <li><i class="fa fa-map-marker"></i><span>78 Glenfield Street Building
+                                                        911 <br>Sydney, Australia.</span></li>
+                                            </ul>
+                                        </div>
+-->
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <ul class="social-list">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+
+                        <!-- Contact Right -->
+                        <div id="contact-right">
+
+                            <form>
+                                <h4>Send Me a Message</h4>
+                                <p>Just send me a message and I will try to reply the soonest. Thank you.</p>
+
+                                <div class="row">
+
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="phone" placeholder="Phone No.">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                                </div>
+
+                                <div id="submit-btn">
+                                    <a class="btn btn-general btn-yellow" href="#" title="Submit" role="button">Submit</a>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Contact Ends -->
+
+    <!-- Google Map -->
+    <section id="google-map">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Google Map Ends -->
+
+    <!-- Footer  -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Copyright &copy; 2020 All Rights Reserved By <span>JDP Inc.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back To Top -->
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="home" role="button">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
+    </footer>
+    <!-- Footer Ends -->
+
+    <!-- JQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- Waypoints -->
+    <script src="js/waypoints/jquery.waypoints.min.js"></script>
+
+    <!-- Responsive Tabs JS -->
+    <script src="js/responsive-tabs/jquery.responsiveTabs.min.js"></script>
+
+    <!-- Isotope -->
+    <script src="js/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- Magnific Popup -->
+    <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Counter -->
+    <script src="js/counter/jquery.counterup.min.js"></script>
+
+    <!-- Google Map JS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9EdV2JfPG1Vfviw9gf_HlblIUfs7Ie2E"></script>
+
+    <!-- Easing -->
+    <script src="js/easing/jquery.easing.1.3.min.js"></script>
+
+    <!-- WOW JS -->
+    <script src="js/wow/wow.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
