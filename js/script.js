@@ -141,7 +141,7 @@ $(function () {
 ============================================ */
 $(function () {
     $("#clients-list").owlCarousel({
-        items: 9,
+        items: 10,
         autoplay: false,
         smartSpeed: 700,
         loop: true,
