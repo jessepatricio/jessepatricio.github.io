@@ -141,7 +141,7 @@ $(function () {
 ============================================ */
 $(function () {
     $("#techs-list").owlCarousel({
-        items: 12,
+        items: 16,
         autoplay: false,
         smartSpeed: 700,
         loop: true,
