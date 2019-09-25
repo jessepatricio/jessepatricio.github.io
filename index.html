@@ -571,7 +571,7 @@
                         <!-- Contact Right -->
                         <div id="contact-right">
 
-                            <form method="post" action="mailto:jessepatricio@gmail.com" enctype="text/plain">
+                            <form method="POST" action="https://formspree.io/jessepatricio@gmail.com">
                                 <h4>Send Me a Message</h4>
                                 <p></p>
 
@@ -579,12 +579,13 @@
 
                                     <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <input type="text" class="form-control" id="name" name="name"
+                                                placeholder="Your Name">
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="email"
+                                            <input type="email" class="form-control" id="email" name="_replyto"
                                                 placeholder="Email Address">
                                         </div>
                                     </div>
@@ -601,12 +602,14 @@
 
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                                    <textarea class="form-control" id="message" name="message"
+                                        placeholder="Message"></textarea>
                                 </div>
 
                                 <div id="submit-btn">
-                                    <a class="btn btn-general btn-yellow" href="#" title="Submit"
-                                        role="button">Submit</a>
+                                    <input class="btn btn-general btn-yellow" type="submit" title="Submit" role="button"
+                                        value="Send" />
+
                                 </div>
 
                             </form>
