@@ -403,6 +403,38 @@ section {
     transform: translateY(-20px);
 }
 
+.cert_view {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.cert_view p {
+    padding: 0px;
+}
+
+.cert_view cert_badge {
+    box-sizing: border-box;
+}
+
+.cert_badge .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.cert_badge .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.cert_badge img {
+    width: 100%;
+}
+
+
+
+
 
 /* Smooth transition */
 

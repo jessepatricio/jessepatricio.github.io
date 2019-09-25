@@ -137,10 +137,10 @@ $(function () {
 
 
 /* =========================================
-              Clients
+              Tech Icons
 ============================================ */
 $(function () {
-    $("#clients-list").owlCarousel({
+    $("#techs-list").owlCarousel({
         items: 10,
         autoplay: false,
         smartSpeed: 700,
