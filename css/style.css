@@ -1083,7 +1083,7 @@ ul.social-list li:nth-child(3) a:hover {
 ============================================ */
 
 #stats {
-    background: url("../img/stats/stats-bg.jpg") no-repeat fixed center;
+    /*background: url("../img/stats/stats-bg.jpg") no-repeat fixed center;*/
     background-size: cover;
 }
 
