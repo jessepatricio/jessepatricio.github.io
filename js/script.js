@@ -141,7 +141,7 @@ $(function () {
 ============================================ */
 $(function () {
     $("#techs-list").owlCarousel({
-        items: 16,
+        items: 17,
         autoplay: false,
         smartSpeed: 700,
         loop: true,
@@ -175,7 +175,7 @@ $(function () {
 $(window).on('load', function () {
 
     // Map Variables
-    var addressString = '89 Forrest Hill Road, Milford, Auckland NZ';
+    var addressString = 'Auckland, New Zealand';
     var myLatlng = {
         lat: -36.77347,
         lng: 174.750670
