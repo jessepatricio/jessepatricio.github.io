@@ -1,0 +1,28 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cursorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A855F7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0E7FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100" height="100" rx="20" fill="url(#cursorGradient)"/>
+  
+  <!-- Cursor C-shape logo -->
+  <path d="M35 25 Q25 25 25 35 L25 45 Q25 55 35 55 L45 55 Q55 55 55 45 L55 40 L48 40 L48 45 Q48 48 45 48 L35 48 Q32 48 32 45 L32 35 Q32 32 35 32 L45 32 Q48 32 48 35 L48 40 L55 40 L55 35 Q55 25 45 25 Z" fill="url(#textGradient)" stroke="none"/>
+  
+  <!-- Modern cursor indicator -->
+  <circle cx="70" cy="70" r="8" fill="white" opacity="0.9"/>
+  <circle cx="70" cy="70" r="4" fill="url(#cursorGradient)"/>
+  
+  <!-- AI accent dots -->
+  <circle cx="75" cy="25" r="2" fill="white" opacity="0.7"/>
+  <circle cx="82" cy="30" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="78" cy="33" r="1" fill="white" opacity="0.6"/>
+</svg>

@@ -1427,3 +1427,111 @@ ul.navbar-nav > li > a:focus {
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
 }
+
+
+/* =========================================
+            Modern Enhancements
+============================================ */
+
+/* Technology logo hover effects */
+.client img {
+    filter: grayscale(20%);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.client img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern gradient text for headings */
+#home-heading-2 span {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Enhanced skills list styling */
+#about-right ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+#about-right ul li::before {
+    content: "→";
+    color: #4062BB;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Modern card-like styling for stats */
+.stats-item {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 12px;
+    padding: 25px 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Certificate badges styling */
+.cert_badge img {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cert_badge img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Modern button styling */
+.btn-general {
+    border-radius: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-general:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Modern transitions for all elements */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Improved responsive behavior for tech carousel */
+@media (max-width: 768px) {
+    .client img {
+        padding: 5px;
+    }
+    
+    #home-text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .stats-item {
+        margin: 5px 0;
+        padding: 20px 10px;
+    }
+}

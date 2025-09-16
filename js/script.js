@@ -141,8 +141,9 @@ $(function () {
 ============================================ */
 $(function () {
     $("#techs-list").owlCarousel({
-        items: 17,
-        autoplay: false,
+        items: 24,
+        autoplay: true,
+        autoplayTimeout: 3000,
         smartSpeed: 700,
         loop: true,
         autoplayHoverPause: true,
@@ -161,6 +162,10 @@ $(function () {
             // breakpoint from 768 up
             768: {
                 items: 6
+            },
+            // breakpoint from 1024 up
+            1024: {
+                items: 8
             }
         }
     });
